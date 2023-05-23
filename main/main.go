@@ -49,4 +49,5 @@ func main() {
 	if len(orders) == 0 {
 		fmt.Println("no user with id ", uid)
 	}
+	row.Close()
 }
