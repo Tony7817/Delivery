@@ -41,7 +41,7 @@ func generateSql() {
 			break
 		}
 		randIndex := rand.Intn(len(weightIntegers))
-		weights = append(weights, rand.Float64()+float64(weightIntegers[randIndex]-1))
+		weights = append(weights, rand.Float64()+float64(weightIntegers[randIndex]-1)+0.1)
 		weightIntegers = append(weightIntegers[:randIndex], weightIntegers[randIndex+1:]...)
 	}
 

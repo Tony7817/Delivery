@@ -9,7 +9,7 @@ sqlite3 order.db
 .read init.sql
 
 # valid range of user id is [1,1000]
-go run --user-id=uid
+go run main/main.go --user-id=uid
 ```
 
 ## Testing

@@ -43,7 +43,7 @@ func main() {
 			fmt.Println(fmt.Sprintf("id: %d, error: %s\n", v.Id, err.Error()))
 			continue
 		}
-		fmt.Println(fmt.Sprintf("order id: %d, price: %.2f\n", v.Id, price))
+		fmt.Println(fmt.Sprintf("order id: %d, weight: %.2f, price: %.2f\n", v.Id, v.Weight, price))
 	}
 
 	if len(orders) == 0 {
