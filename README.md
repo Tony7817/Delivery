@@ -8,8 +8,8 @@ go run init/init.go > init.sql
 sqlite3 order.db
 .read init.sql
 
-# valid range of id is [1,1000]
-go run --user-id=id
+# valid range of user id is [1,1000]
+go run --user-id=uid
 ```
 
 ## Testing
